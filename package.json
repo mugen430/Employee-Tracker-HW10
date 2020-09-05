@@ -1,0 +1,29 @@
+{
+  "name": "employee-tracker-hw10",
+  "version": "1.0.0",
+  "description": "Employee Tracker homework 10",
+  "main": "server.js",
+  "dependencies": {
+    "inquirer": "^7.3.3",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "N/A"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mugen430/Employee-Tracker-HW10.git"
+  },
+  "keywords": [
+    "Employee",
+    "Tracker",
+    "HW10"
+  ],
+  "author": "Maverick A",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mugen430/Employee-Tracker-HW10/issues"
+  },
+  "homepage": "https://github.com/mugen430/Employee-Tracker-HW10#readme"
+}
