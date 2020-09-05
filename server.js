@@ -1,21 +1,21 @@
-var mysql      = require('mysql');
-var inquirer = require('inquirer');
+var mysql      = require("mysql");
+var inquirer = require("inquirer");
 
 var connection = mysql.createConnection({
-  host     : 'LocalHost',
-  port     : 7000,
-  user     : 'root',
-  password : 'Averie430'
-  database : 'employee_db'
+  host     : "LocalHost",
+  port     : 3306,
+  user     : "root",
+  password : "Averie430",
+  database : "employee_db",
 });
  
 connection.connect(function(err) {
   if (err) {
-    console.error('woops no connection for port: ' + err.stack);
+    console.error("woops no connection for port: " + err.stack);
     return;
   }
  
-  console.log('This port is spicily connected to port: ' + connection.threadId);
+  console.log("This port is spicily connected to port: " + connection.threadId);
   runSearch();
 });
 
@@ -68,3 +68,21 @@ function runSearch() {
     });
 }
 
+function addDep() {
+    inquirer
+        .prompt({
+            type: "input",
+            message: "New department name",
+            name: "department"    
+        })
+        .then(function(answer) {
+            console.log("Department is being added to Database");
+            connection.query("INSERT INTO department SET ?",
+            { name : answer.department },
+            function (err, res) {
+                if (err) throw err;
+                console.log("Generated department per request");
+                runSearch();
+            });
+        });
+    }

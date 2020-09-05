@@ -25,4 +25,6 @@ id INT PRIMARY KEY NOT NULL AUTO_INCREMENT
 , manager_id INT NULL
 );
 
-
+SELECT * FROM department;
+SELECT * FROM roles;
+SELECT * FROM employee;
