@@ -1,4 +1,4 @@
--- THANKS FOR THE HINT!!!
+USE employee_db;
 
 INSERT INTO employee (first_name, last_name, role_id, manager_id)
 VALUES ("Levi", "Dog", 1, 1)
@@ -12,7 +12,7 @@ VALUES ("Boss", 100000, 1)
 , ("Not-The-Boss", 50000, 1);
 
 INSERT INTO department (name)
-VALUES ("Boss")
-, ("Mini-Boss")
-, ("Baby-Boss");
+VALUES ("Administrative")
+, ("Accounting")
+, ("Services")
 
