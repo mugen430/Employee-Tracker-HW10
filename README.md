@@ -1,4 +1,4 @@
-![MUGEN430]()
+![MUGEN430](https://github.com/mugen430/Employee-Tracker-HW10/blob/master/Assets/employee-tracker.gif?raw=true)
 
 
   # GitHub Username
